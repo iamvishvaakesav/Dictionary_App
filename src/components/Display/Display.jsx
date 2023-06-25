@@ -1,6 +1,7 @@
 import React from "react";
 import { ReactComponent as PlayButton } from "../../assets/play.svg";
 import "./Display.css";
+import handlePlay from "./handlePlay";
 function Display({ dictResponse }) {
   return (
     <div>
@@ -22,7 +23,7 @@ function Display({ dictResponse }) {
         <a
           className=" playIconWrapper"
           onClick={() => {
-            // handlePlay(dictResponse.phonetics);
+            handlePlay(dictResponse.phonetics);
           }}
         >
           <PlayButton className="playIcon"></PlayButton>

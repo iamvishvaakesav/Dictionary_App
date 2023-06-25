@@ -27,6 +27,7 @@
 }
 .term {
   font-size: 3rem;
+
   font-weight: var(--fw-bold);
 }
 
@@ -51,6 +52,7 @@
   width: fit-content;
   padding-right: 2rem;
   color: var(--color-text);
+
   font-size: var(--fs-300);
   font-weight: var(--fw-bold);
 }

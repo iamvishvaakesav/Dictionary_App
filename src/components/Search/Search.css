@@ -16,6 +16,7 @@
 
 .searchIconButton {
   color: var(--color-text);
+
   position: absolute;
   top: 12px;
   right: 24px;

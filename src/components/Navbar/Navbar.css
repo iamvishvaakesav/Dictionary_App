@@ -9,6 +9,7 @@
 .title {
   font-size: 1.5rem;
   color: var(--color-text);
+
   font-weight: normal;
 }
 
@@ -25,6 +26,7 @@
 
 .icon {
   fill: var(--color-text);
+
   margin-top: 0.35rem;
   height: 2.5rem;
   width: 2.5rem;
@@ -50,6 +52,7 @@
   overflow: hidden;
   background-color: var(--color-cards);
   box-shadow: var(--color-accent-dropShadow) 0px 8px 20px;
+
   z-index: 10;
 }
 
@@ -69,6 +72,7 @@
   position: absolute;
   content: "";
   background-color: var(--color-accent-verticalBar);
+
   inset: 0;
   width: 2px;
   height: calc(var(--nav-size) * 0.45);

@@ -65,10 +65,16 @@ function App() {
         dictResponse={dictResponse}
         setDictResponse={setDictResponse}
       ></Search>
-      <Display
-        dictResponse={dictResponse}
-        setDictResponse={setDictResponse}
-      ></Display>
+      {dictResponse.meanings ? (
+        <Display
+          dictResponse={dictResponse}
+          className="containerCustom"
+        ></Display>
+      ) : (
+        <div className="errorMessage containerCustom">
+          Sorry No Definitions found
+        </div>
+      )}
     </div>
   );
 }
