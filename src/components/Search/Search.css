@@ -1,0 +1,37 @@
+.searchWrapper {
+  max-width: 100%;
+  position: relative;
+  margin-bottom: calc(var(--default-padding) * 2);
+}
+
+.searchBar {
+  padding: 0.65rem;
+  padding-left: 1rem;
+  width: 100%;
+  border-radius: 0.6rem;
+  text-transform: lowercase;
+  border: none;
+  background-color: var(--color-cards);
+}
+
+.searchIconButton {
+  color: var(--color-text);
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+.searchIcon {
+  width: 1.25rem;
+}
+
+.searchBar:focus {
+  outline: none;
+}
+
+.searchBar::placeholder {
+  color: var(--color-text);
+}

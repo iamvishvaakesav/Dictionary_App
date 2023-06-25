@@ -17,9 +17,16 @@
 
   /* Color Palette */
   --color-body: hsl(202, 100%, 100%);
-  --color-cards: #fff;
-  --color-text: hsl(209 50% 15%);
-  --color-accent-1: hsl(208, 7%, 50%);
+  --color-cards: hsl(0, 0%, 98%);
+  --color-text: hsl(209 50% 10%);
+  --color-accent-horizontalBar: hsl(208, 7%, 80%);
+  --color-accent-verticalBar: hsl(209 50% 15%);
+  --color-accent-toggleBg: hsl(0, 0%, 38%);
+  --color-accent-playButton: hsl(109 50% 15%);
+  --color-accent-playButtonBg: hsl(109 50% 90%);
+  --color-accent-synonyms: hsl(109 50% 40%);
+  --color-accent-dropShadow: hsl(208, 7%, 95%);
+  --color-accent-themeToggle: var(--color-accent-toggleBg);
 
   /* Nav Size */
 
@@ -48,6 +55,7 @@ html,
 body {
   height: 100%;
   font-family: var(--ff-serif);
+  transition: 0.5s;
 }
 /*
     Typographic tweaks!
@@ -96,4 +104,21 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+body.dark {
+  --color-body: #000000;
+  --color-cards: hsl(0, 0%, 7%);
+  --color-text: #fff;
+  --color-accent-horizontalBar: hsl(208, 7%, 80%);
+  --color-accent-verticalBar: hsl(209 50% 85%);
+  --color-accent-toggleBg: hsl(0, 0%, 38%);
+  --color-accent-playButton: hsl(109 50% 15%);
+  --color-accent-playButtonBg: hsl(109 50% 80%);
+  --color-accent-synonyms: hsl(109 50% 70%);
+  --color-accent-dropShadow: var(--color-body);
+  --color-accent-themeToggle: var(--color-accent-synonyms);
+
+  background-color: var(--color-body);
+  color: var(--color-text);
 }
