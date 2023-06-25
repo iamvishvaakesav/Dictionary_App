@@ -12,6 +12,7 @@
   text-transform: lowercase;
   border: none;
   background-color: var(--color-cards);
+  color: var(--color-text);
 }
 
 .searchIconButton {
